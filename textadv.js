@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded',function(){
         {
             hint="*You can type: [Say bye.] or [Buy sword.] or [Buy shield.] or [Buy nothing.] ";
         }
-        if(stage==10)
+        if(stage>=10)
         {
             hint="*You have reached the end. Please reload the page.* ";
         }
@@ -330,6 +330,7 @@ document.addEventListener('DOMContentLoaded',function(){
             {
                 document.querySelector('#text').textContent+="You arrive at the villiage and are attacked by a dragon.  you are able to cut it's heart and save the village, but it also lands a fatal blow with it's tail. THE END.";
             }
+            stage++;
         }
     })  
 });
